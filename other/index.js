@@ -3,6 +3,6 @@
 // document.getElementsById("button").onclick = function() {
 //     location.href = "pages/math-game.html";
 // }
-document.getElementByClassName("math").onclick = function() {
+document.getElementsByClassName("math").onclick = function() {
     location.href = "pages/math-game.html";
 }
