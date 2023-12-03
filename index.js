@@ -5,3 +5,10 @@ total = balls * people
 console.log(people)
 
 alert("total ballage: " + total)
+
+document.getElementById("button").onclick = function() {
+    button()
+}
+function button() {
+    alert("kill yourself")
+}
