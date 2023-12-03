@@ -4,4 +4,4 @@ total = balls * people
 
 console.log(people)
 
-alert("total ballage" + total)
+alert("total ballage: " + total)
