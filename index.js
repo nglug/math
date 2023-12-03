@@ -1,6 +1,4 @@
-console.log('yooyyo')
 balls = 2
-people = 2
+people = prompt("how many people")
+
 console.log(balls * people)
-fruit = prompt("gimme fruit")
-console.log(fruit)
