@@ -1,0 +1,23 @@
+.main {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    width: 200px;
+    margin: auto;
+    padding: -10px 10px -10px 10px;
+}
+
+.buttonGroup {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.mathButton {
+    margin: 10px;
+}
+.Placeholder {
+    margin: 10px;
+}
