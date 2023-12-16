@@ -10,13 +10,15 @@
     <div class="main">
         <div class="buttonGroup">
             <button class="mathButton" id="button">Math Game</button>
-            <button class="Placeholder" id="button">Placeholder</button>
+            <button class="paypalButton" id="button" onclick="window.location.href = 'paypal.html';">Fake Paypal</button>
             <button class="Placeholder" id="button">Placeholder</button>
             <button class="Placeholder" id="button">Placeholder</button>
         </div>
     </div>
 </body>
-<script src="other/index.js">
-
+<script src="JavaScript/home.js">
+    document.getElementsByClassName('paypalButton').onclick = function() {
+    window.location.href = "nglug.co.uk/paypal.html";
+}
 </script>
 </html>

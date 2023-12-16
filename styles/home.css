@@ -4,7 +4,11 @@
     background-color: blue;
     width: 200px;
     margin: auto;
-    padding: -10px 10px -10px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
 }
 
 .buttonGroup {
@@ -20,4 +24,10 @@
 }
 .Placeholder {
     margin: 10px;
+}
+
+#button {
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
 }
