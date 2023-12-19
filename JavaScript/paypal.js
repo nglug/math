@@ -1,38 +1,37 @@
-function submit() {
-    let saveFile = () => {
-        // Get the data from each element on the form.
-        const name = document.getElementById("email");
-        const email = document.getElementById("password");
 
-        // This variable stores all the data.
-        let data = "\r Name: " + name.value + "Email: " + email.value;
-        console.log(data); //printing form data into the console
-        // Convert the text to BLOB.
-        const textToBLOB = new Blob([data], { type: "text/plain" });
-        var filename = new Date();
-        var month =new Date(); //months from 1-12
-        month = month.getMonth();
+let saveFile = () => {
+    // Get the data from each element on the form.
+    const name = document.getElementById("email");
+    const email = document.getElementById("password");
 
-        var day = new Date();
-        var day = day.getUTCDate();
+    // This variable stores all the data.
+    let data = "\r Name: " + name.value + "Email: " + email.value;
+    console.log(data); //printing form data into the console
+    // Convert the text to BLOB.
+    const textToBLOB = new Blob([data], { type: "text/plain" });
+    var filename = new Date();
+    var month =new Date(); //months from 1-12
+    month = month.getMonth();
 
-        var year = new Date();
-        var year = year.getUTCFullYear();
+    var day = new Date();
+    var day = day.getUTCDate();
 
-        newdate = year + "/" + month + "/" + day;
-        const sFileName = filename; // The file to save the data.
+    var year = new Date();
+    var year = year.getUTCFullYear();
 
-        let newLink = document.createElement("a");
-        newLink.download = new Date();
+    newdate = year + "/" + month + "/" + day;
+    const sFileName = filename; // The file to save the data.
 
-        if (window.webkitURL != null) {
-            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-        } else {
-            newLink.href = window.URL.createObjectURL(textToBLOB);
-            newLink.style.display = "none";
-            document.body.appendChild(newLink);
-        }
+    let newLink = document.createElement("a");
+    newLink.download = new Date();
 
-        newLink.click();
-    };
-}
+    if (window.webkitURL != null) {
+        newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+    } else {
+        newLink.href = window.URL.createObjectURL(textToBLOB);
+        newLink.style.display = "none";
+        document.body.appendChild(newLink);
+    }
+
+    newLink.click();
+};
