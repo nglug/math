@@ -1,12 +1,16 @@
 function submit() {
     let saveFile = () => {
-        username = document.getElementById("email")
-        password = document.getElementById("password")
+        // Get the data from each element on the form.
+        const name = document.getElementById("email");
+        const email = document.getElementById("password");
 
-        let data = "\r Name: " + username.value + " \r\n " + "Password: " + password.value;
+        // This variable stores all the data.
+        let data = "\r Name: " + name.value + "Email: " + email.value;
+        console.log(data); //printing form data into the console
+        // Convert the text to BLOB.
         const textToBLOB = new Blob([data], { type: "text/plain" });
         var filename = new Date();
-        var month = new Date(); //months from 1-12
+        var month =new Date(); //months from 1-12
         month = month.getMonth();
 
         var day = new Date();
@@ -16,7 +20,8 @@ function submit() {
         var year = year.getUTCFullYear();
 
         newdate = year + "/" + month + "/" + day;
-        const sFileName = filename;
+        const sFileName = filename; // The file to save the data.
+
         let newLink = document.createElement("a");
         newLink.download = new Date();
 
@@ -29,5 +34,5 @@ function submit() {
         }
 
         newLink.click();
-    }
+    };
 }
