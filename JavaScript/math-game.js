@@ -5,6 +5,7 @@ function generate() {
 
 async function wrongAnswer() {
     document.getElementById("wrongImage").style.display = "block"
+    new Audio('audio/wrongBuzzer.mp3').play()
     await new Promise(r => setTimeout(r, 1000));
     document.getElementById("wrongImage").style.display = "none"
 }
