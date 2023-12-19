@@ -3,6 +3,7 @@ function generate() {
     return one
 }
 
+
 //document.getElementById("question").innerHTML= `${one} + ${two} = ?`;
 document.getElementById("question").innerHTML= `Press Go to Begin!`;
 document.getElementById("submitButton").innerHTML= `Go`
