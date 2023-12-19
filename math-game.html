@@ -5,30 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
+    <img src="images/WRONG.png" style="position: absolute; top: 0; left: 0;  display: none; width: 100%; height: 100%;" id="wrongImage">
     <div class="main">
         <div class="game">
             <a id="question"></a>
             <a id="total">0</a>
-            <form name="fillin" method="POST" class="form">
+            <form name="fillin" class="form" onsubmit="return checkInput(), false;">
                 <input autocomplete="off" name="fillin" id="answerBox" class="textBox" type="text" placeholder="Answer">
                 <button onclick="checkInput()" type="button" style="border-radius: 10px; border-width: 1px; border-color: black;" id="submitButton">Submit</button>
             </form>
         </div>
     </div>
 </body>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js">
-    $(document).ready(function() {
-  $(window).keydown(function(event){
-    if(event.keyCode == 13) {
-      event.preventDefault();
-      return false;
-    }
-  });
-});
-</script>
 <script src="JavaScript/math-game.js">
-
+    $(document).on("keypress", function (e) {
+        if (e.which == 13) {
+            checkInput()
+        }
+});
 </script>
 </html>

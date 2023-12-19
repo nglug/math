@@ -3,6 +3,11 @@ function generate() {
     return one
 }
 
+async function wrongAnswer() {
+    document.getElementById("wrongImage").style.display = "block"
+    await new Promise(r => setTimeout(r, 1000));
+    document.getElementById("wrongImage").style.display = "none"
+}
 
 //document.getElementById("question").innerHTML= `${one} + ${two} = ?`;
 document.getElementById("question").innerHTML= `Press Go to Begin!`;
@@ -12,6 +17,7 @@ document.getElementById("total").style.display = "none";
 var one = 0
 var two = 0
 var n = 0
+var total = 0
 
 function checkInput() {
     document.getElementById("answerBox").style.display = "flex";
@@ -23,13 +29,17 @@ function checkInput() {
         if( n != 0) {
             document.getElementById("question").style.marginBottom = "118px";
             document.getElementById("total").style.display = "block";
-            document.getElementById("total").innerHTML = `Total: ${parseInt(document.getElementById("total").innerHTML) + 1}`;
+            document.getElementById("total").innerHTML = `Total: ${total += 1}`;
+            document.getElementById("answerBox").value = ""
         }
         else {
             n += 1
         }
     } else {
-        alert("false");
+        document.getElementById("answerBox").value = ""
+        total = 0
+        document.getElementById("total").innerHTML = `Total: ${total}`;
+        wrongAnswer()
     }
 
     one = generate()
