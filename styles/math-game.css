@@ -14,7 +14,7 @@
 }
 .game {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin: 120px auto 0;
 }
