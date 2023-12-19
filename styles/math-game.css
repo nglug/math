@@ -12,3 +12,12 @@
   height: 523px;
   border-radius: 12px;
 }
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 120px auto 0;
+}
+#answerBox {
+  display
+}
