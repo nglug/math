@@ -31,9 +31,15 @@
   text-align: center;
   height: 30px;
 }
-a {
+#question {
   margin: auto;
   width: 50%;
   text-align: center;
+  
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
 }

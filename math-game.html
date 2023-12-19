@@ -9,11 +9,16 @@
 <body>
     <div class="main">
         <div class="game">
-            <a>Question placeholder</a>
-            <form name="fillin" method="POST">
-                <input name="fillin" id="answerBox" class="textBox" type="text" placeholder="Answer">
+            <a id="question"></a>
+            <a id="total">0</a>
+            <form name="fillin" method="POST" class="form">
+                <input autocomplete="off" name="fillin" id="answerBox" class="textBox" type="text" placeholder="Answer">
+                <button onclick="checkInput()" type="button" style="border-radius: 10px; border-width: 1px; border-color: black;" id="submitButton">Submit</button>
             </form>
         </div>
     </div>
 </body>
+<script src="JavaScript/math-game.js">
+
+</script>
 </html>
