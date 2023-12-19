@@ -28,11 +28,12 @@
   border-width: 1px;
   border-color: black;
   font-family: Arial,sans-serif;
-  text-align: center
+  text-align: center;
+  height: 30px;
 }
 a {
   margin: auto;
   width: 50%;
   text-align: center;
-  height: 30px;
+  
 }
