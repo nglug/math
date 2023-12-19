@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-content: space-around;
+  gap: 30px;
   margin: 120px auto 0;
 }
 #answerBox {
