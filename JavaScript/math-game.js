@@ -24,7 +24,6 @@ function checkInput() {
     document.getElementById("submitButton").innerHTML= `Submit`;
 
     var userInput = document.getElementById("answerBox").value;
-    console.log(userInput)
     if (userInput == one + two) {
         if( n != 0) {
             document.getElementById("question").style.marginBottom = "118px";
@@ -45,8 +44,6 @@ function checkInput() {
     one = generate()
     two = generate()
     var sum = one + two
-    console.log(sum);
     document.getElementById("question").innerHTML= `${one} + ${two} = ?`;
 
 }
-console.log(one + two)
