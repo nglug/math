@@ -19,12 +19,14 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js">
-    $("form").keypress(function(e) {
-    //Enter key
-    if (e.which == 13) {
+    $(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
       return false;
     }
   });
+});
 </script>
 <script src="JavaScript/math-game.js">
 
