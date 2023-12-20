@@ -25,21 +25,25 @@
 #answerBox {
   margin-bottom: 40px;
   border-radius: 10px;
-  border-width: 1px;
+  border-width: 0px;
   border-color: black;
-  font-family: Arial,sans-serif;
+  font-family: sans-serif;
   text-align: center;
   height: 50px;
   width: 200px;
-  font-family: Arial;
   font-size: 20px;
   font-weight: 500;
+  box-shadow: 0px 0px 10px 10px #70C3D9;
 }
 #question {
   margin: auto;
   width: 80%;
   text-align: center;
   font-size: 40px;
+  background-color: #70C3D9;
+  height: 60px;
+  padding-top:15px;
+  border-radius: 10px;
 }
 .form {
   display: flex;
@@ -54,12 +58,13 @@
   background-color: #A1EEBD;
   height: 50px;
   width: 150px;
-  font-family: Arial;
+  font-family: sans-serif;
   font-size: 30px;
   font-weight: 500;
+  box-shadow: 0px 0px 10px 10px #70C3D9;
 }
 #total {
-  font-family: Arial;
+  font-family: sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
